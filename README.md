@@ -2,6 +2,12 @@
 
 This repository contains a template override for the standard Joomla Custom Module (`mod_custom`). it transforms the module into a sticky countdown banner that automatically syncs with the module's "Finish Publishing" date.
 
+> [!NOTE]
+> **⚡ Performance Note**
+> Adding Javascript timers to your Hero section can negatively impact your LCP (Largest Contentful Paint) if not optimized. This code is lightweight, but ensure your background images are optimized.
+
+![Countdown Demo](media/demo.gif)
+
 ## Features
 
 - **Automatic Sync**: The countdown timer automatically calculates the remaining time based on the "Finish Publishing" date set in the module settings.
@@ -16,6 +22,11 @@ This override is perfect for launching new products, running limited-time offers
 I originally created this override to manage the launch offer for the **[JR Image Optimizer](https://joomreem.com/extension-store/39-package/98-jr-image-optimizer)**.
 JR Image Optimizer is a powerful Joomla extension that automatically optimizes your images (WebP conversion (AVIF coming soon), resizing, lazy loading) to boost your PageSpeed scores and SEO rankings. 
 Using this countdown banner helped create urgency and successfully automate the end of the launch campaign without manual intervention.
+
+
+> [!TIP]
+> **🚀 Pro Tip**
+> I use this timer alongside **[JR Image Optimizer](https://joomreem.com/extension-store/39-package/98-jr-image-optimizer)** to ensure my Hero images load instantly (AVIF/WebP) so the timer appears immediately without layout shift.
 
 ## Installation
 
