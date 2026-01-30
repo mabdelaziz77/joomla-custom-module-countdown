@@ -41,36 +41,34 @@ Using this countdown banner helped create urgency and successfully automate the 
    - Insert the specific HTML structure required by the JavaScript:
 
 ```html
-<div id="launch-banner" class="sticky-launch-banner">
+<div id="launch-banner" class="sticky-launch-banner" data-date="[[target_date]]">
     <div class="container">
         <div class="banner-content">
             <div class="banner-text-group">
-                <div class="banner-headline">🚀 Limited Time Launch Offer!</div>
-                <div class="banner-subtext">Get 30% OFF JR Image Optimizer</div>
+                <div class="banner-headline">OFFICIAL LAUNCH: Founder's Price ($29/Year)</div>
+                <div class="banner-subtext">Get the Unlimited Sites license before the price increases tomorrow.</div>
             </div>
-            
             <div class="countdown-timer">
                 <div class="timer-item">
-                    <span id="timer-days" class="timer-number">00</span>
+                    <span id="timer-days" class="timer-number">00</span> 
                     <span class="timer-label">Days</span>
                 </div>
                 <div class="timer-item">
-                    <span id="timer-hours" class="timer-number">00</span>
+                    <span id="timer-hours" class="timer-number">00</span> 
                     <span class="timer-label">Hrs</span>
                 </div>
                 <div class="timer-item">
-                    <span id="timer-minutes" class="timer-number">00</span>
-                    <span class="timer-label">Min</span>
+                    <span id="timer-minutes" class="timer-number">00</span> 
+                    <span class="timer-label">Mins</span>
                 </div>
                 <div class="timer-item">
-                    <span id="timer-seconds" class="timer-number">00</span>
-                    <span class="timer-label">Sec</span>
+                    <span id="timer-seconds" class="timer-number">00</span> 
+                    <span class="timer-label">Secs</span>
                 </div>
             </div>
-
             <div class="banner-actions">
-                <a href="https://joomreem.com/extension-store/39-package/98-jr-image-optimizer" class="banner-cta">Get It Now</a>
-                <button class="banner-close" aria-label="Close banner">×</button>
+                <a class="banner-cta" href="https://joomreem.com/extension-store/39-package/98-jr-image-optimizer">Lock Price Forever</a> 
+                <button class="banner-close" aria-label="Close">×</button>
             </div>
         </div>
     </div>
