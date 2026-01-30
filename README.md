@@ -14,26 +14,29 @@ This repository contains a template override for the standard Joomla Custom Modu
 This override is perfect for launching new products, running limited-time offers, or announcing events. 
 
 I originally created this override to manage the launch offer for the **[JR Image Optimizer](https://joomreem.com/extension-store/39-package/98-jr-image-optimizer)**.
-JR Image Optimizer is a powerful Joomla extension that automatically optimizes your images (WebP/AVIF conversion, resizing, lazy loading) to boost your PageSpeed scores and SEO rankings. 
+JR Image Optimizer is a powerful Joomla extension that automatically optimizes your images (WebP conversion (AVIF coming soon), resizing, lazy loading) to boost your PageSpeed scores and SEO rankings. 
 Using this countdown banner helped create urgency and successfully automate the end of the launch campaign without manual intervention.
 
 ## Installation
 
-1. **Copy Files**:
+1. **Create Template Override**:
+   - Ensure you have the override structure in your template. You can generate this via Joomla Admin: **System** > **Site Templates** > **[Your Template]** > **Create Overrides** > **mod_custom**.
+
+2. **Copy Files**:
    - Copy `templates/cassiopeia/html/mod_custom/countdown.php` to your template's HTML override folder (e.g., `templates/your_template/html/mod_custom/`).
    - Copy the `media/mod_custom` folder to your site's `media/` directory (so you have `media/mod_custom/css/launch_banner.css` and `media/mod_custom/js/launch_banner.js`).
 
-2. **Create Module**:
+3. **Create Module**:
    - Go to Joomla Administrator > Content > Site Modules > New.
    - Select **Custom**.
    
-3. **Configure**:
+4. **Configure**:
    - **Title**: Enter a title (e.g., "Launch Banner").
    - **Position**: Select a position (e.g., `banner` or `top-bar`, or `debug` since it's fixed position anyway).
    - **Layout**: In the Advanced tab, change the **Layout** to `countdown`.
    - **Publishing**: Set the **Finish Publishing** date and time. This is CRITICAL as it determines when the countdown ends.
 
-4. **Content**:
+5. **Content**:
    - Switch the editor to Code view (Toggle Editor).
    - Insert the specific HTML structure required by the JavaScript:
 
@@ -74,7 +77,7 @@ Using this countdown banner helped create urgency and successfully automate the 
 </div>
 ```
 
-5. **Save**: Save and Publish.
+6. **Save**: Save and Publish.
 
 ## Customization
 
